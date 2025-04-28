@@ -1,0 +1,114 @@
+/* ResumeComponent Styles - Medium Text Size */
+
+.article-title { 
+    margin-bottom: 30px; 
+    font-size: 30px; /* Slightly smaller */
+  }
+  
+  .resume{
+    padding-left: 70px;
+    padding-top: 50px;
+  }
+  
+  /* Timeline Section */
+  .timeline { margin-bottom: 30px; }
+  
+  .timeline .title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+  
+  .timeline-list {
+    font-size: 16px; /* Medium size */
+    margin-left: 45px;
+  }
+  
+  .timeline-item { position: relative; }
+  
+  .timeline-item:not(:last-child) { margin-bottom: 20px; }
+  
+  .timeline-item-title {
+    font-size: 20px; /* Medium size */
+    line-height: 1.4;
+    margin-bottom: 8px;
+  }
+  
+  .timeline-list span {
+    color: #012a5b;
+    font-weight: 500;
+    font-size: 16px; /* Medium size */
+    line-height: 1.6;
+  }
+  
+  .timeline-item:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: -30px;
+    width: 1px;
+    height: calc(100% + 50px);
+    background: #012a5b;
+  }
+  
+  .timeline-item::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -33px;
+    height: 7px;
+    width: 7px;
+    background: #4a75a5; /* Light color of 012a5b */
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px #012a5b;
+  }
+  
+  .timeline-text {
+    color: #777;
+    font-weight: 400;
+    font-size: 15px; /* Medium */
+    line-height: 1.7;
+  }
+  
+  /* Skills Section */
+  .skills-title { 
+    margin-bottom: 20px; 
+    font-size: 24px; /* Medium size */
+  }
+  
+  .skills-list { padding: 20px; }
+  
+  .skills-item:not(:last-child) { margin-bottom: 18px; }
+  
+  .skill .title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .skill .title-wrapper h5 {
+    font-size: 18px; /* Medium */
+    font-weight: 500;
+  }
+  
+  .skill .title-wrapper data {
+    color: #777;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  
+  .skill-progress-bg {
+    background: #4a75a5;
+    width: 100%;
+    height: 8px;
+    border-radius: 10px;
+  }
+  
+  .skill-progress-fill {
+    background: #012a5b;
+    height: 100%;
+    border-radius: inherit;
+  }
+  

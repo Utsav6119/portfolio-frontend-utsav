@@ -1,0 +1,62 @@
+<article class="resume" data-page="resume">
+    <header>
+      <h2 class="h2 article-title">Resume</h2>
+    </header>
+  
+    <section class="timeline">
+      <div class="title-wrapper">
+        <div class="icon-box">
+          <ion-icon name="book-outline"></ion-icon>
+        </div>
+        <h3 class="h3">Education</h3>
+      </div>
+      <ol class="timeline-list">
+        <li class="timeline-item" *ngFor="let edu of education">
+          <h4 class="h4 timeline-item-title">{{ edu.school }}</h4>
+          <span>{{ edu.period }}</span>
+          <p class="timeline-text">
+            {{ edu.degree }}
+            <br>
+            Grade: {{ edu.grade }}
+          </p>
+        </li>
+      </ol>
+    </section>
+  
+    <section class="timeline">
+      <div class="title-wrapper">
+        <div class="icon-box">
+          <ion-icon name="book-outline"></ion-icon>
+        </div>
+        <h3 class="h3">Experience</h3>
+      </div>
+      <ol class="timeline-list">
+        <li class="timeline-item" *ngFor="let exp of experience">
+          <h4 class="h4 timeline-item-title">{{ exp.title }}</h4>
+          <span>{{ exp.company }}</span>
+          <span>{{ exp.period }}</span>
+          <p class="timeline-text">
+            {{ exp.description }}
+            <br>
+            Skills: {{ exp.skills }}
+          </p>
+        </li>
+      </ol>
+    </section>
+  
+    <section class="skill">
+      <h3 class="h3 skills-title">My skills</h3>
+      <ul class="skills-list content-card">
+        <li class="skills-item" *ngFor="let skill of skills">
+          <div class="title-wrapper">
+            <h5 class="h5">{{ skill.name }}</h5>
+            <data value="{{ skill.percentage }}">{{ skill.percentage }}%</data>
+          </div>
+          <div class="skill-progress-bg">
+            <div class="skill-progress-fill" [style.width.%]="skill.percentage"></div>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </article>
+  

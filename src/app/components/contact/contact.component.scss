@@ -53,7 +53,7 @@ body {
 .form h2 {
     font-size: 2em;
     margin-bottom: 10px;
-    color: #012a5b;
+    color: #012a5b; /* Primary blue color */
 }
 
 .form p {
@@ -74,8 +74,8 @@ body {
 }
 
 .inputs input:focus, .inputs textarea:focus {
-    border-color: #012a5b;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    border-color: #012a5b; /* Focus with blue */
+    box-shadow: 0 0 5px rgba(0, 18, 91, 0.5); /* Focus shadow matching primary blue */
 }
 
 .inputs textarea {
@@ -86,7 +86,7 @@ body {
 .inputs button {
     width: 100%;
     padding: 15px;
-    background-color: #012a5b;
+    background-color: #012a5b; /* Keep primary blue color */
     border: none;
     border-radius: 8px;
     font-size: 1em;
@@ -96,7 +96,7 @@ body {
 }
 
 .inputs button:hover {
-    background-color: #012a5b;
+    background-color: #023b7f; /* Slightly darker blue on hover */
 }
 
 .map iframe {
@@ -106,6 +106,7 @@ body {
     border-radius: 8px;
 }
 
+/* Social media icons section */
 .social-media-links {
     display: flex;
     justify-content: center;
@@ -116,7 +117,7 @@ body {
 .social-icon-link {
     width: 60px;
     height: 60px;
-    background-color: #e0e0e0;
+    background-color: #012a5b; /* Set background to blue */
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -126,10 +127,10 @@ body {
 }
 
 .social-icon-link:hover {
-    background-color: #012a5b; /* Darker on hover */
+    background-color: #023b7f; /* Slightly darker blue on hover */
 }
 
 .social-icon-link i {
     font-size: 28px;
-    color: #012a5b;
+    color: #fff; /* White color for the icon */
 }

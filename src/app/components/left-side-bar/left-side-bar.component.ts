@@ -18,7 +18,8 @@ export class LeftSideBarComponent {
     { routeLink: 'dashboard', icon: 'fas fa-home', label: 'Home' },
     { routeLink: 'about', icon: 'fa-solid fa-user', label: 'About' },
     { routeLink: 'service', icon: 'fa-solid fa-bars-progress', label: 'Service' },
-    { routeLink: 'contact', icon: 'fa-solid fa-envelope', label: 'Contact' }
+    { routeLink: 'contact', icon: 'fa-solid fa-envelope', label: 'Contact' },
+    { routeLink: 'resume', icon: 'fa-solid fa-file', label: 'Resume' }
   ];
 
   toggleCollapse(): void {
