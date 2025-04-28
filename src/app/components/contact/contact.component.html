@@ -17,12 +17,12 @@
             <h2>Contact Us</h2>
             <p>Feel free to reach out for any inquiries or feedback. We are here to help!</p>
       
-            <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+            <form (ngSubmit)="onSubmit()" >
               <div class="inputs">
-                <input type="text" name="name" [(ngModel)]="contact.name" placeholder="Your Name" required>
-                <input type="email" name="email" [(ngModel)]="contact.email" placeholder="Your Email" required>
-                <textarea name="message" [(ngModel)]="contact.message" placeholder="Your Message" required></textarea>
-                <button type="submit" [disabled]="!contactForm.valid">Send Message</button>
+                <input type="text" name="name"  placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message"  placeholder="Your Message" required></textarea>
+                <button type="submit" >Send Message</button>
               </div>
             </form>
       

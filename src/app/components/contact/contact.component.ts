@@ -10,6 +10,7 @@ export class ContactComponent {
     name: '',
     email: '',
     message: ''
+    
   };
 
   submittedContacts: any[] = [];
