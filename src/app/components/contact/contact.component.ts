@@ -21,7 +21,7 @@ export class ContactComponent {
     this.submittedContacts.push({ ...this.contact });
 
     // Optional: Save to localStorage
-    // localStorage.setItem('submittedContacts', JSON.stringify(this.submittedContacts));
+    // localStorage.setItem('submittedContacts', JSON.stringify(this.submittedContacts));;;
 
     // Reset form
     this.contact = {

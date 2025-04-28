@@ -2,7 +2,6 @@ import { Component, HostListener, OnInit, Inject, PLATFORM_ID, signal } from '@a
 import { isPlatformBrowser } from '@angular/common';  // Import isPlatformBrowser
 import { LeftSideBarComponent } from './components/left-side-bar/left-side-bar.component';
 import { MainComponent } from './components/main/main.component';
-import { NgxTypedJsModule } from 'ngx-typed-js';
 
 @Component({
   selector: 'app-root',
