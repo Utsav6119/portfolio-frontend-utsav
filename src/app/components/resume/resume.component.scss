@@ -111,4 +111,21 @@
     height: 100%;
     border-radius: inherit;
   }
+
+  .article-title {
+    position: relative;
+    display: inline-block; /* Makes the underline fit the text */
+    font-size: 30px; /* Your existing font size */
+    margin-bottom: 30px;
+  }
+  
+  .article-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Adjust distance from text */
+    width: 65%; /* Slightly larger underline width (can be adjusted) */
+    height: 5px; /* Thickness of the underline */
+    background-color: #012a5b; /* Underline color */
+  }
   

@@ -29,14 +29,14 @@ export class ResumeComponent {
   experience = [
     {
       title: "Software Development Engineer",
-      company: "Virtusa Consulting Services, Pune, MH, IN",
-      period: "June 2022 - Presnt",
+      company: "Virtusa Consulting Services, Pune, MH, IN ",
+      period: "June 2022 - Present",
       description: "Spring Boot Java Backend Developer – British Telecommunications Experienced backend developer specializing in building scalable microservices and REST APIs using Java and Spring Boot. Skilled in cloud deployments (AWS), CI/CD pipelines (Jenkins, Docker), database integration, and system security. Delivering high-quality, reliable backend solutions for critical telecommunications systems at BT.",
       skills: "Java · Spring Boot"
     },
     {
       title: "Software Developer Intern",
-      company: "Virtusa Consulting Services, Chennai",
+      company: "Virtusa Consulting Services, Chennai ",
       period: "Jan 2022 - May 2022",
       skills: "Java · Spring Boot/Angular"
     }
