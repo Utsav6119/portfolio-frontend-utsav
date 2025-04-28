@@ -1,0 +1,16 @@
+[build]
+command = "npm run build"
+publish = "dist/portfolio-frontend/browser"
+functions = "netlify/functions"
+
+[dev]
+command = "npm run start"
+
+[[plugins]]
+package = "@netlify/angular-runtime"
+
+[functions]
+  node_bundler = "esbuild"
+
+[angular]
+  server_file = "dist/portfolio-frontend/server/server.mjs"
