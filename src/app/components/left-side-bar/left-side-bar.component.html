@@ -1,0 +1,37 @@
+<div class="sidenav" [ngClass]="isLeftSidebarCollapsed ? 'sidenav-collapsed' : ''">
+    <div class="logo-container">
+      <button class="logo" (click)="toggleCollapse()">
+        <i class="fas fa-bars"></i>
+      </button>
+      <!-- Logo is visible only when sidebar is not collapsed -->
+      <div *ngIf="!isLeftSidebarCollapsed" class="logo-text">App</div>
+      <!-- Close button is visible regardless of collapse state -->
+      <button *ngIf="!isLeftSidebarCollapsed" class="btn-close" (click)="closeSidenav()">
+        <i class="fas fa-times close-icon"></i>
+      </button>
+    </div>
+  
+    <div class="sidenav-nav">
+      <div *ngFor="let item of items" class="sidenav-nav-item">
+        <a
+          class="sidenav-nav-link"
+          [routerLink]="item.routeLink"
+          routerLinkActive="activer"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          <i class="sidenav-link-icon" [class]="item.icon"></i>
+          <span *ngIf="!isLeftSidebarCollapsed" class="sidenav-link-text">{{ item.label }}</span>
+        </a>
+      </div>
+    </div>
+    <footer id="footer" *ngIf="!isLeftSidebarCollapsed">
+        <div class="container">
+          <div class="copyright">
+            &copy; Copyright <strong><span>Utsav Soni</span></strong>
+            <div><a rel="noopener" href="/sitemap.xml">sitemap</a></div>
+          </div>
+        </div>
+    
+      </footer><!-- End  Footer -->
+  </div>
+  

@@ -1,0 +1,186 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+    font-family: "Open Sans", sans-serif;
+    font-display: swap;
+    color: #272829;
+    padding-left: 5px; /* Removed left padding from body */
+}
+
+a {
+    color: #0073aa;
+}
+
+a:hover {
+    color: #37b3ed;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+    position: fixed;
+    display: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    right: 15px;
+    bottom: 15px;
+    background: #0073aa;
+    color: #fff;
+    transition: display 0.5s ease-in-out;
+    z-index: 99999;
+    padding-left: 10px;  /* Removed left padding */
+}
+
+.back-to-top i {
+    font-size: 24px;
+    position: absolute;
+    top: 7px;
+    left: 8px;
+}
+
+.back-to-top:hover {
+    color: #fff;
+    background: #2eafec;
+    transition: background 0.2s ease-in-out;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    transition: all ease-in-out 0.5s;
+    z-index: 9997;
+    transition: all 0.5s;
+    padding-left: 10px;  /* Removed left padding */
+    background: #243d5d;
+    overflow-y: auto;
+}
+
+#header .profile img {
+    margin: 15px auto;
+    display: block;
+    width: 50px;
+    border: 8px solid #2c2f3f;
+}
+
+#header .profile h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 10px;
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+    padding-left: 0;  /* Removed left padding */
+    padding-right: 10px;  /* Removed right padding */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
+.section-bg {
+    background: #f5f8fd;
+}
+
+.section-title {
+    padding-bottom: 30px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #173b6c;
+}
+
+.section-title h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #0073aa;
+    bottom: 0;
+    left: 0;
+}
+
+.section-title p {
+    margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+
+.about .content h3 {
+    font-weight: 700;
+    font-size: 26px;
+    color: #173b6c;
+}
+
+.about .content ul {
+    list-style: none;
+    padding: 5px;
+}
+
+.about .content ul li {
+    padding-bottom: 10px;
+    font-size: 17px;
+}
+
+.about .content ul i {
+    font-size: 20px;
+    padding-right: 2px;
+    color: #0073aa;
+}
+
+.about .content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Add 20px padding to the left of the about section */
+#about {
+    padding-left: 10px;
+  }
+  
+  .container {
+    padding-left: 10px;
+  }
+  
+
+  .about-me-row {
+    display: flex;
+    align-items: center;  // Vertically center content
+  }
+  
+  .profile-image {
+    width: 90%;  // Make image responsive
+    max-width: 300px;  // Set a max width to control the image size
+    height: auto;
+  }
+  
+  .content {
+    padding-left: 0;  // Add padding to the left of the text for spacing
+  }
+
+  .icon-padding {
+    padding-right: 20px;
+}
+  

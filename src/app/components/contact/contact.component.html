@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Form with Map</title>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./contact.component.scss">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="container">
+          <div class="form">
+            <h2>Contact Us</h2>
+            <p>Feel free to reach out for any inquiries or feedback. We are here to help!</p>
+      
+            <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+              <div class="inputs">
+                <input type="text" name="name" [(ngModel)]="contact.name" placeholder="Your Name" required>
+                <input type="email" name="email" [(ngModel)]="contact.email" placeholder="Your Email" required>
+                <textarea name="message" [(ngModel)]="contact.message" placeholder="Your Message" required></textarea>
+                <button type="submit" [disabled]="!contactForm.valid">Send Message</button>
+              </div>
+            </form>
+      
+            <div class="social-media-links">
+              <a class="social-icon-link" href="#">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a class="social-icon-link" href="#">
+                <i class="fa-brands fa-square-facebook"></i>
+              </a>
+              <a class="social-icon-link" href="#">
+                <i class="fa-brands fa-google"></i>
+              </a>
+              <a class="social-icon-link" href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+      
+          <div class="map">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.352308558443!2d84.54187077476886!3d23.04646691548696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398b0e3d4b15c1b3%3A0x6ff6b4a5b1a0b1b7!2sGumla%2C%20Jharkhand%20835307%2C%20India!5e0!3m2!1sen!2sin!4v1714245145932!5m2!1sen!2sin"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+      
+</body>
+</html>
